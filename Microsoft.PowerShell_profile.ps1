@@ -21,9 +21,9 @@ function Git-Log-Oneline { git log --oneline }
 Set-Alias ggl Git-Log-Oneline
 function Git-Log-Oneline-Graph { git log --oneline --graph }
 Set-Alias gglg Git-Log-Oneline-Graph
-function Git-B { git branch }
+function Git-B() { git branch }
 Set-Alias ggb Git-B
-function Git-Co($branchname) { git co $branchname }
+function Git-Co($branchname) { git co $branchname}
 Set-Alias ggco Git-Co
 function Git-Co-Master { git co master }
 Set-Alias ggcom Git-Co-Master
@@ -72,3 +72,15 @@ function rmrf() {
         Remove-Item $dirname -Force
    }
 }
+
+Import-Module 'D:\JavaScript\Helpers\powershell\posh-git-develop\src\posh-git.psd1'
+
+$GitPromptSettings.DefaultPromptSuffix = '`n$(''$'' * ($nestedPromptLevel + 1)) '
+$GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $true
+$GitPromptSettings.DefaultPromptPrefix = 'Ravend@$(hostname) '
+$GitPromptSettings.BeforeText = ' ('
+$GitPromptSettings.BeforeText.ForegroundColor = 'Yellow'
+$GitPromptSettings.AfterText = ')'
+$GitPromptSettings.AfterText.ForegroundColor = 'Yellow'
+$GitPromptSettings.DefaultPromptPrefix.ForegroundColor = [ConsoleColor]::Magenta
+$GitPromptSettings.DefaultPromptPath.ForegroundColor = 'Yellow'
