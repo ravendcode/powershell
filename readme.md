@@ -1,5 +1,7 @@
 # PowerShell Profile
 
+![Example](example.jpg)
+
 ## Install posh-git
 
 1. In powershell `Test-Path $profile`
