@@ -1,0 +1,14 @@
+
+Test-Path $profile
+New-Item -path $profile -type file –force
+# reload profile
+.$profile
+subl $profile
+# show all alias
+gal
+# show all alias start g
+gal g*
+# show all alias end g
+gal *g
+# go to home dir
+sl ~
