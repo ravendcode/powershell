@@ -1,6 +1,6 @@
 # PowerShell Profile
 
-![Example](example-powershell.jpg)
+![Powershell](powershell.jpg)
 
 ## Install posh-git
 
