@@ -52,7 +52,9 @@ function touch() {
 }
 function mkdirs() {
     foreach ($dirname in $args) {
-        New-Item -ItemType directory -Path $dirname
+        if (! (Test-Path $dirname)) {
+            New-Item -ItemType directory -Path $dirname
+        }
    }
 }
 function mcd($dirname) {
@@ -60,7 +62,7 @@ function mcd($dirname) {
         if (! (Test-Path $dirname)) {
             New-Item -ItemType directory -Path $dirname
         }
-        Set-location $dirname
+        Set-Location $dirname
     }
 }
 function la() {
@@ -69,8 +71,10 @@ function la() {
 }
 function rmrf() {
     foreach ($dirname in $args) {
-        Remove-Item $dirname -Force
-   }
+        if (Test-Path $dirname) {
+            Remove-Item $dirname -Force
+        }
+    }
 }
 
 Import-Module 'D:\JavaScript\Helpers\powershell\posh-git-develop\src\posh-git.psd1'
