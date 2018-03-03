@@ -21,9 +21,9 @@ function Git-Log-Oneline { git log --oneline }
 Set-Alias ggl Git-Log-Oneline
 function Git-Log-Oneline-Graph { git log --oneline --graph }
 Set-Alias gglg Git-Log-Oneline-Graph
-function Git-B() { git branch }
+function Git-B { git branch }
 Set-Alias ggb Git-B
-function Git-Co($branchname) { git co $branchname}
+function Git-Co($branchname) { git co $branchname }
 Set-Alias ggco Git-Co
 function Git-Co-Master { git co master }
 Set-Alias ggcom Git-Co-Master
