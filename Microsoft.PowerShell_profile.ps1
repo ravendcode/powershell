@@ -10,7 +10,7 @@ function Py-Code { set-location "D:\Py\Code" }
 Set-Alias pycode Py-Code
 function Pyb-Code { set-location "D:\Py\Code\base" }
 Set-Alias pybcode Pyb-Code
-function Pys-Code { set-location "D:\Py\Code\salic" }
+function Pys-Code { set-location "D:\Py\Code\sanic" }
 Set-Alias pyscode Pys-Code
 function Pyd-Code { set-location "D:\Py\Code\django" }
 Set-Alias pydcode Pyd-Code
