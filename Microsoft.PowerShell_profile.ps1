@@ -4,7 +4,7 @@ Set-Location D:
 function Js-Code { set-location "D:\JavaScript\Code" }
 Set-Alias jscode Js-Code
 
-function Jsn-Code { set-location "D:\JavaScript\Code\node" }
+function Js-Node-Code { set-location "D:\JavaScript\Code\node" }
 Set-Alias jsncode Jsn-Code
 
 function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
