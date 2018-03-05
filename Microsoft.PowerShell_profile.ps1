@@ -113,7 +113,7 @@ function mkdirs() {
    }
 }
 
-function mcd($dirname) {
+function mkcd($dirname) {
     if ($dirname) {
         if (! (Test-Path $dirname)) {
             New-Item -ItemType directory -Path $dirname
