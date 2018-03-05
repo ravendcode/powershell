@@ -2,10 +2,33 @@ Set-Location D:
 # code
 function Js-Code { set-location "D:\JavaScript\Code" }
 Set-Alias jscode Js-Code
-function Node-Code { set-location "D:\JavaScript\Code\node" }
-Set-Alias nodecode Node-Code
+function Jsn-Code { set-location "D:\JavaScript\Code\node" }
+Set-Alias jsncode Jsn-Code
 function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
 Set-Alias gocode Go-Code
+function Py-Code { set-location "D:\Py\Code" }
+Set-Alias pycode Py-Code
+function Pyb-Code { set-location "D:\Py\Code\base" }
+Set-Alias pybcode Pyb-Code
+function Pys-Code { set-location "D:\Py\Code\salic" }
+Set-Alias pyscode Pys-Code
+function Pyd-Code { set-location "D:\Py\Code\django" }
+Set-Alias pydcode Pyd-Code
+function Pyf-Code { set-location "D:\Py\Code\flask" }
+Set-Alias pyfcode Pyf-Code
+# py venv
+function Py-Venv($venvname) {
+    if ($venvname -eq $null) {
+        py -m venv venv
+    } else {
+        py -m venv $venvname
+    }
+}
+Set-Alias pyv Py-Venv
+function Py-Venv-Activate { venv\Scripts\activate }
+Set-Alias pyva Py-Venv-Activate
+function Py-Venv-Deactivate { deactivate }
+Set-Alias pyvd Py-Venv-Deactivate
 # git
 function Git-Init { git init }
 Set-Alias ggi Git-Init
