@@ -45,7 +45,7 @@ function Pip-Freeze-Requirements { pip freeze > requirements.txt }
 Set-Alias pipf Pip-Freeze-Requirements
 
 function Pip-Install-Requirements { pip install -r requirements.txt }
-Set-Alias pipi Pip-Install-Requirements
+Set-Alias pipir Pip-Install-Requirements
 
 # git
 function Git-Init { git init }
