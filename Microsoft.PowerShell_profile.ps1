@@ -10,6 +10,9 @@ Set-Alias jsncode Js-Node-Code
 function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
 Set-Alias gocode Go-Code
 
+function Rust-Code { set-location "D:\Rust\Code" }
+Set-Alias rscode Rust-Code
+
 function Py-Code { set-location "D:\Py\Code" }
 Set-Alias pycode Py-Code
 
@@ -83,6 +86,9 @@ Set-Alias ggcob Git-Co-Branch
 
 function Git-Push { git push }
 Set-Alias ggp Git-Push
+
+function Git-Push-Heroku { git push heroku master }
+Set-Alias ggph Git-Push-Heroku
 
 function Git-Pull { git pull }
 Set-Alias ggpl Git-Pull
