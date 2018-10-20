@@ -7,11 +7,20 @@ Set-Alias jscode Js-Code
 function Js-Node-Code { set-location "D:\JavaScript\Code\node" }
 Set-Alias jsncode Js-Node-Code
 
+function PHP-Code { set-location "D:\PHP\Code" }
+Set-Alias phpcode PHP-Code
+
+function Ts-Code { set-location "D:\JavaScript\Code\ts" }
+Set-Alias tscode Ts-Code
+
 function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
 Set-Alias gocode Go-Code
 
 function Rust-Code { set-location "D:\Rust\Code" }
 Set-Alias rscode Rust-Code
+
+function CS-Code { set-location "D:\CS\Code" }
+Set-Alias cscode CS-Code
 
 function Py-Code { set-location "D:\Py\Code" }
 Set-Alias pycode Py-Code
