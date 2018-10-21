@@ -10,6 +10,9 @@ Set-Alias jsncode Js-Node-Code
 function PHP-Code { set-location "D:\PHP\Code" }
 Set-Alias phpcode PHP-Code
 
+function L-Code { set-location "D:\PHP\Code\laravel" }
+Set-Alias lcode L-Code
+
 function Ts-Code { set-location "D:\JavaScript\Code\ts" }
 Set-Alias tscode Ts-Code
 
