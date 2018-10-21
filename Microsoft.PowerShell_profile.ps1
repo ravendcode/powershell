@@ -40,6 +40,10 @@ Set-Alias pydcode Py-Django-Code
 function Py-Flask-Code { set-location "D:\Py\Code\flask" }
 Set-Alias pyfcode Py-Flask-Code
 
+# laravel
+function Laravel-Artisan($message) { php artisan "$message" }
+Set-Alias a Laravel-Artisan
+
 # py venv
 function Py-Venv($venvname) {
     if ($venvname -eq $null) {
