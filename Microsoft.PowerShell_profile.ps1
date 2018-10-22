@@ -44,6 +44,16 @@ Set-Alias pyfcode Py-Flask-Code
 function Laravel-Artisan($message) { php artisan "$message" }
 Set-Alias a Laravel-Artisan
 
+# django
+function Django-Admin($message) { django-admin.py "$message" }
+Set-Alias da Django-Admin
+
+function Django-Runserver($message) { python manage.py runserver "$message" }
+Set-Alias dr Django-Runserver
+
+function Django-Manage($message) { python manage.py runserver "$message" }
+Set-Alias dm Django-Manage
+
 # py venv
 function Py-Venv($venvname) {
     if ($venvname -eq $null) {
