@@ -41,20 +41,20 @@ function Py-Flask-Code { set-location "D:\Py\Code\flask" }
 Set-Alias pyfcode Py-Flask-Code
 
 # laravel
-function Laravel-Artisan() { php artisan "$args" }
+function Laravel-Artisan() { php artisan $args }
 Set-Alias a Laravel-Artisan
 
-function Laravel-Artisan-Serve() { php artisan serve "$args" }
+function Laravel-Artisan-Serve() { php artisan serve $args }
 Set-Alias as Laravel-Artisan-Serve
 
 # django
-function Django-Admin() { django-admin.py "$args" }
+function Django-Admin() { django-admin.py $args }
 Set-Alias da Django-Admin
 
-function Django-Runserver() { python manage.py runserver "$args" }
+function Django-Runserver() { python manage.py runserver $args }
 Set-Alias dr Django-Runserver
 
-function Django-Manage() { python manage.py runserver "$args" }
+function Django-Manage() { python manage.py runserver $args }
 Set-Alias dm Django-Manage
 
 # py venv
