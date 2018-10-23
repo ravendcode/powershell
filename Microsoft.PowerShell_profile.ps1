@@ -89,7 +89,7 @@ Set-Alias ggs Git-Status
 function Git-Add { git add . }
 Set-Alias gga Git-Add
 
-function Git-Commit($message) { git commit -m "$message" }
+function Git-Commit() { git commit -m $args }
 Set-Alias ggc Git-Commit
 
 function Git-Log { git log }
