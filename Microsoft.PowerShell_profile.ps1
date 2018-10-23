@@ -1,6 +1,6 @@
 Set-Location D:
 
-#code
+# code
 function Js-Code { set-location "D:\JavaScript\Code" }
 Set-Alias jscode Js-Code
 
@@ -40,14 +40,14 @@ Set-Alias pydcode Py-Django-Code
 function Py-Flask-Code { set-location "D:\Py\Code\flask" }
 Set-Alias pyfcode Py-Flask-Code
 
-#laravel
+# laravel
 function Laravel-Artisan() { php artisan $args }
 Set-Alias a Laravel-Artisan
 
 function Laravel-Artisan-Serve() { php artisan serve $args }
 Set-Alias as Laravel-Artisan-Serve
 
-#django
+# django
 function Django-Admin() { django-admin.py $args }
 Set-Alias da Django-Admin
 
@@ -57,7 +57,7 @@ Set-Alias dr Django-Runserver
 function Django-Manage() { python manage.py runserver $args }
 Set-Alias dm Django-Manage
 
-#py venv
+# py venv
 function Py-Venv($venvname) {
     if ($venvname -eq $null) {
         py -m venv venv
@@ -79,7 +79,7 @@ Set-Alias pipf Pip-Freeze-Requirements
 function Pip-Install-Requirements { pip install -r requirements.txt }
 Set-Alias pipir Pip-Install-Requirements
 
-#git
+# git
 function Git-Init { git init }
 Set-Alias ggi Git-Init
 
@@ -122,7 +122,7 @@ Set-Alias ggph Git-Push-Heroku
 function Git-Pull { git pull }
 Set-Alias ggpl Git-Pull
 
-#file
+# file
 function touch() {
     $t = $host.ui.RawUI.ForegroundColor
     if ($args.count -eq 0) {
