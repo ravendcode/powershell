@@ -40,6 +40,10 @@ Set-Alias pydcode Py-Django-Code
 function Py-Flask-Code { set-location "D:\Py\Code\flask" }
 Set-Alias pyfcode Py-Flask-Code
 
+# PHP
+function PHP-Unit() { vendor\bin\phpunit }
+Set-Alias phpunit PHP-Unit
+
 # laravel
 function Laravel-Artisan() { php artisan $args }
 Set-Alias a Laravel-Artisan
