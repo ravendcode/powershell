@@ -41,7 +41,7 @@ function Py-Flask-Code { set-location "D:\Py\Code\flask" }
 Set-Alias pyfcode Py-Flask-Code
 
 # PHP
-function PHP-Unit() { vendor\bin\phpunit }
+function PHP-Unit() { vendor\bin\phpunit $args }
 Set-Alias phpunit PHP-Unit
 
 # laravel
