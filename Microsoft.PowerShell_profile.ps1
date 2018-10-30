@@ -45,7 +45,7 @@ function Node-Yarn() { yarn $args }
 Set-Alias y Node-Yarn
 
 # php
-function PHP-Unit() { vendor\bin\phpunit $args }
+function PHP-Unit() { php vendor\bin\phpunit $args }
 Set-Alias phpunit PHP-Unit
 
 # laravel
