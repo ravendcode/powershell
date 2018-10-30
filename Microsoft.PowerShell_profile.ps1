@@ -46,7 +46,10 @@ Set-Alias y Node-Yarn
 
 # php
 function PHP-Unit() { php vendor\bin\phpunit $args }
-Set-Alias phpunit PHP-Unit
+Set-Alias p PHP-Unit
+
+function PHP-Unit-Filter() { php vendor\bin\phpunit --filter $args }
+Set-Alias pf PHP-Unit-Filter
 
 # laravel
 function Laravel-Artisan() { php artisan $args }
