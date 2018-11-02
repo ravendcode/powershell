@@ -13,6 +13,9 @@ Set-Alias phpcode PHP-Code
 function L-Code { set-location "D:\PHP\Code\laravel" }
 Set-Alias lcode L-Code
 
+function S-Code { set-location "D:\PHP\Code\symfony" }
+Set-Alias scode S-Code
+
 function Ts-Code { set-location "D:\JavaScript\Code\ts" }
 Set-Alias tscode Ts-Code
 
@@ -57,6 +60,13 @@ Set-Alias a Laravel-Artisan
 
 function Laravel-Artisan-Serve() { php artisan serve $args }
 Set-Alias as Laravel-Artisan-Serve
+
+# symfony
+function Symfony-Console() { php bin/console $args }
+Set-Alias c Symfony-Console
+
+function Symfony-Console-Serve() { php bin/console server:run $args }
+Set-Alias cs Symfony-Console-Serve
 
 # django
 function Django-Admin() { django-admin.py $args }
