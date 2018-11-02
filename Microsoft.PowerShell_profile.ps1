@@ -5,7 +5,7 @@ function Js-Code { set-location "D:\JavaScript\Code" }
 Set-Alias jscode Js-Code
 
 function Js-Node-Code { set-location "D:\JavaScript\Code\node" }
-Set-Alias jsncode Js-Node-Code
+Set-Alias ncode Js-Node-Code
 
 function PHP-Code { set-location "D:\PHP\Code" }
 Set-Alias phpcode PHP-Code
