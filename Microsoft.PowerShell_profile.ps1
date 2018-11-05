@@ -19,6 +19,9 @@ Set-Alias scode S-Code
 function Ts-Code { set-location "D:\JavaScript\Code\ts" }
 Set-Alias tscode Ts-Code
 
+function Unity-Code { set-location "D:\Unity\Code" }
+Set-Alias ucode Unity-Code
+
 function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
 Set-Alias gocode Go-Code
 
