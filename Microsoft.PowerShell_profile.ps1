@@ -22,6 +22,9 @@ Set-Alias tscode Ts-Code
 function Unity-Code { set-location "D:\Unity\Code" }
 Set-Alias ucode Unity-Code
 
+function Kotlin-Code { set-location "D:\Kotlin\Code" }
+Set-Alias kcode Kotlin-Code
+
 function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
 Set-Alias gocode Go-Code
 
