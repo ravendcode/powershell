@@ -53,6 +53,10 @@ Set-Alias pyfcode Py-Flask-Code
 function Node-Yarn() { yarn $args }
 Set-Alias y Node-Yarn
 
+# gradle
+function Gradle() { gradle $args }
+Set-Alias g Gradle
+
 # php
 function PHP-Unit() { php vendor\bin\phpunit $args }
 Set-Alias p PHP-Unit
