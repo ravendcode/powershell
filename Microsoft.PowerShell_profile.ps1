@@ -59,10 +59,10 @@ Set-Alias g Gradle
 
 # php
 function PHP-Unit() { php vendor\bin\phpunit $args }
-Set-Alias p PHP-Unit
+Set-Alias pp PHP-Unit
 
 function PHP-Unit-Filter() { php vendor\bin\phpunit --filter $args }
-Set-Alias pf PHP-Unit-Filter
+Set-Alias ppf PHP-Unit-Filter
 
 # laravel
 function Laravel-Artisan() { php artisan $args }
@@ -74,6 +74,12 @@ Set-Alias as Laravel-Artisan-Serve
 # symfony
 function Symfony-Console() { php bin/console $args }
 Set-Alias c Symfony-Console
+
+function PHP-Unit() { php bin\phpunit $args }
+Set-Alias p PHP-Unit
+
+function PHP-Unit-Filter() { php bin\phpunit --filter $args }
+Set-Alias pf PHP-Unit-Filter
 
 function Symfony-Console-Serve() { php bin/console server:run $args }
 Set-Alias cs Symfony-Console-Serve
