@@ -1,8 +1,12 @@
 Set-Location D:
 
 # code
+function J-Code { set-location "D:\Java\Code" }
+Set-Alias jcode J-Code
+
 function Js-Code { set-location "D:\JavaScript\Code" }
 Set-Alias jscode Js-Code
+
 
 function Js-Node-Code { set-location "D:\JavaScript\Code\node" }
 Set-Alias ncode Js-Node-Code
