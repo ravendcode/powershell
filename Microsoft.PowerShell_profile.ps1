@@ -1,5 +1,7 @@
 Set-Location D:
 
+New-Alias which get-command
+
 # code
 function J-Code { set-location "D:\Java\Code" }
 Set-Alias jcode J-Code
