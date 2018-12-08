@@ -1,6 +1,6 @@
 Set-Location D:
 
-New-Alias which get-command
+Set-Alias which get-command
 
 # code
 function J-Code { set-location "D:\Java\Code" }
@@ -89,6 +89,9 @@ Set-Alias pf PHP-Unit-Filter
 
 function Symfony-Console-Serve() { php bin/console server:run $args }
 Set-Alias cs Symfony-Console-Serve
+
+function Symfony-Console-Router() { php bin/console debug:router --show-controllers $args }
+Set-Alias cr Symfony-Console-Router
 
 # django
 function Django-Admin() { django-admin.py $args }
