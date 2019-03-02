@@ -11,3 +11,5 @@ gal g*
 gal *g
 # go to home dir
 sl ~
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
