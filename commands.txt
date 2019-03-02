@@ -11,5 +11,6 @@ gal g*
 gal *g
 # go to home dir
 sl ~
-
+# policy
+Get-ExecutionPolicy -List
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
