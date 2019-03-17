@@ -1,58 +1,44 @@
-Set-Location D:
+# Set-Location D:
 
 Set-Alias which get-command
 
+$codePath = "C:\Users\Ravend\Code"
+
 # code
-function J-Code { set-location "D:\Java\Code" }
+function J-Code { set-location "$codePath\java" }
 Set-Alias jcode J-Code
 
-function Js-Code { set-location "D:\JavaScript\Code" }
+function Js-Code { set-location "$codePath\js" }
 Set-Alias jscode Js-Code
 
-
-function Js-Node-Code { set-location "D:\JavaScript\Code\node" }
+function Js-Node-Code { set-location "$codePath\node" }
 Set-Alias ncode Js-Node-Code
 
-function PHP-Code { set-location "D:\PHP\Code" }
-Set-Alias phpcode PHP-Code
+function PHP-Code { set-location "$codePath\php" }
+Set-Alias pcode PHP-Code
 
-function L-Code { set-location "D:\PHP\Code\laravel" }
-Set-Alias lcode L-Code
+function L-Code { set-location "$codePath\php\laravel" }
+Set-Alias plcode L-Code
 
-function S-Code { set-location "D:\PHP\Code\symfony" }
-Set-Alias scode S-Code
+function S-Code { set-location "$codePath\php\symfony" }
+Set-Alias pscode S-Code
 
-function Ts-Code { set-location "D:\JavaScript\Code\ts" }
-Set-Alias tscode Ts-Code
-
-function Unity-Code { set-location "D:\Unity\Code" }
-Set-Alias ucode Unity-Code
-
-function Kotlin-Code { set-location "D:\Kotlin\Code" }
-Set-Alias kcode Kotlin-Code
-
-function Go-Code { set-location "D:\Go\Code\src\github.com\ravendcode" }
+function Go-Code { set-location "$codePath\go\github.com\ravendcode" }
 Set-Alias gocode Go-Code
 
-function Rust-Code { set-location "D:\Rust\Code" }
-Set-Alias rscode Rust-Code
-
-function CS-Code { set-location "D:\CS\Code" }
-Set-Alias cscode CS-Code
-
-function Py-Code { set-location "D:\Py\Code" }
+function Py-Code { set-location "$codePath\py" }
 Set-Alias pycode Py-Code
 
-function Py-Base-Code { set-location "D:\Py\Code\base" }
+function Py-Base-Code { set-location "$codePath\py\base" }
 Set-Alias pybcode Py-Base-Code
 
-function Py-Sanic-Code { set-location "D:\Py\Code\sanic" }
+function Py-Sanic-Code { set-location "$codePath\py\sanic" }
 Set-Alias pyscode Py-Sanic-Code
 
-function Py-Django-Code { set-location "D:\Py\Code\django" }
+function Py-Django-Code { set-location "$codePath\py\django" }
 Set-Alias pydcode Py-Django-Code
 
-function Py-Flask-Code { set-location "D:\Py\Code\flask" }
+function Py-Flask-Code { set-location "$codePath\py\flask" }
 Set-Alias pyfcode Py-Flask-Code
 
 # node
@@ -97,11 +83,11 @@ Set-Alias cr Symfony-Console-Router
 function Django-Admin() { django-admin.py $args }
 Set-Alias da Django-Admin
 
+function Django-Manage() { python manage.py $args }
+Set-Alias dm Django-Manage
+
 function Django-Runserver() { python manage.py runserver $args }
 Set-Alias dr Django-Runserver
-
-function Django-Manage() { python manage.py runserver $args }
-Set-Alias dm Django-Manage
 
 # py venv
 function Py-Venv($venvname) {
@@ -216,7 +202,7 @@ function rmrf() {
     }
 }
 
-Import-Module 'D:\JavaScript\Helpers\powershell\posh-git-develop\src\posh-git.psd1'
+Import-Module 'E:\JavaScript\Helpers\powershell\posh-git-develop\src\posh-git.psd1'
 
 $GitPromptSettings.DefaultPromptSuffix = '`n$(''$'' * ($nestedPromptLevel + 1)) '
 $GitPromptSettings.DefaultPromptAbbreviateHomeDirectory = $true
