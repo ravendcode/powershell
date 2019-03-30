@@ -1,8 +1,9 @@
+$codePath = "C:\Users\Ravend\Code"
+
 # Set-Location D:
 
 Set-Alias which get-command
-
-$codePath = "C:\Users\Ravend\Code"
+Set-Alias subl 'C:\Program Files\Sublime Text 3\sublime_text.exe'
 
 # code
 function J-Code { set-location "$codePath\java" }
