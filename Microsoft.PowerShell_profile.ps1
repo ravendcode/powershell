@@ -19,6 +19,7 @@ Set-Alias pcode PHP-Code
 
 function L-Code { set-location "$codePath\php\laravel" }
 Set-Alias plcode L-Code
+Set-Alias lcode L-Code
 
 function S-Code { set-location "$codePath\php\symfony" }
 Set-Alias pscode S-Code
