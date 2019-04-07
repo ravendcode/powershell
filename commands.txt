@@ -14,3 +14,4 @@ sl ~
 # policy
 Get-ExecutionPolicy -List
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+if ($?) { g++ main.cpp -o main } ; if ($?) { .\main }

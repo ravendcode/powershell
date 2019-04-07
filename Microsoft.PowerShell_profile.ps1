@@ -6,6 +6,10 @@ Set-Alias which get-command
 Set-Alias subl 'C:\Program Files\Sublime Text 3\sublime_text.exe'
 
 # code
+function Cpp-Code { set-location "$codePath\cpp" }
+Set-Alias cppcode Cpp-Code
+Set-Alias ccode Cpp-Code
+
 function J-Code { set-location "$codePath\java" }
 Set-Alias jcode J-Code
 
