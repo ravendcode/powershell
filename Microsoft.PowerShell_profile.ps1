@@ -6,6 +6,17 @@ Set-Alias which get-command
 Set-Alias subl 'C:\Program Files\Sublime Text 3\sublime_text.exe'
 
 # code
+function Asp-Code { set-location "$codePath\dotnet\aspnet" }
+Set-Alias aspcode Asp-Code
+Set-Alias acode Asp-Code
+
+function Dot-Code { set-location "$codePath\dotnet" }
+Set-Alias dotcode Dot-Code
+Set-Alias dcode Dot-Code
+
+function Cs-Code { set-location "$codePath\cs" }
+Set-Alias cscode Cs-Code
+
 function Cpp-Code { set-location "$codePath\cpp" }
 Set-Alias cppcode Cpp-Code
 Set-Alias ccode Cpp-Code
