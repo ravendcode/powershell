@@ -21,6 +21,14 @@ function Cpp-Code { set-location "$codePath\cpp" }
 Set-Alias cppcode Cpp-Code
 Set-Alias ccode Cpp-Code
 
+function Ruby-Code { set-location "$codePath\ruby" }
+Set-Alias rbcode Ruby-Code
+Set-Alias rcode Ruby-Code
+
+function Rails-Code { set-location "$codePath\ruby\rails" }
+Set-Alias rorcode Rails-Code
+Set-Alias rrcode Rails-Code
+
 function J-Code { set-location "$codePath\java" }
 Set-Alias jcode J-Code
 
