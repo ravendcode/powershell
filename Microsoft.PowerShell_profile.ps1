@@ -88,6 +88,9 @@ Set-Alias a Laravel-Artisan
 function Laravel-Artisan-Serve() { php artisan serve $args }
 Set-Alias as Laravel-Artisan-Serve
 
+function Laravel-Artisan-Route() { php artisan route:list $args }
+Set-Alias ar Laravel-Artisan-Route
+
 # symfony
 function Symfony-Console() { php bin/console $args }
 Set-Alias c Symfony-Console
