@@ -91,6 +91,9 @@ Set-Alias as Laravel-Artisan-Serve
 function Laravel-Artisan-Route() { php artisan route:list $args }
 Set-Alias ar Laravel-Artisan-Route
 
+function Laravel-Artisan-Migrate-Fresh() { php artisan migrate:fresh $args }
+Set-Alias amf Laravel-Artisan-Migrate-Fresh
+
 # symfony
 function Symfony-Console() { php bin/console $args }
 Set-Alias c Symfony-Console
